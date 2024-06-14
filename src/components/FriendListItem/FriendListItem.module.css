@@ -1,0 +1,43 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  
+    padding: 10px 20px;
+    border: 1px solid #e5eaf1;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .status {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+  
+  .online {
+    composes: status;
+    background-color: #3eb446;
+  }
+  
+  .offline {
+    composes: status;
+    background-color: #ff5251;
+  }
+  
+  .avatar {
+    padding: 8px;
+    background-color: #f3f6f9;
+  
+    border: 1px solid #e5eaf1;
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-size: 26px;
+    font-weight: bold;
+    color: #112236;
+  }
